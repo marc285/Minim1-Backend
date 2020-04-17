@@ -1,6 +1,8 @@
 import { Router } from 'express';
-//IMPORT xRouter from './xRoutes'
+import clusterRouter from './clusterRoutes';
 
 const router: Router = Router();
+
+router.use('/clusters', clusterRouter);
 
 export default router;
